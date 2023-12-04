@@ -1,0 +1,31 @@
+.laNav{
+    display: flex;
+    background-color: rgb(248, 244, 244); 
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.laNav ul{
+    list-style: none;
+     display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.laNav--img{
+    width: 100px;
+    margin-left: 100px;
+}
+
+.laNav li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin-right: 30px;
+}
+
+.laNav li:hover{
+    color: violet;
+}
+
+
+
