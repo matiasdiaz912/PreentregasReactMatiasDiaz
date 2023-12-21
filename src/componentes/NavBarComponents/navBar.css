@@ -17,13 +17,13 @@
     margin-left: 100px;
 }
 
-.laNav li{
+.laNav Link{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
     margin-right: 30px;
 }
 
-.laNav li:hover{
+.laNav Link:hover{
     color: violet;
 }
 

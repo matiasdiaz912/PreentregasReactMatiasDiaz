@@ -1,12 +1,10 @@
-import ItemContainer from './componentes/itemContainer/ItemContainer'
-import NavBarComponent from './componentes/NavBarComponents/NavBar'
+import MainRouter from './router/MainRouter'
 
 function App() {
 
   return (
     <>
-      <NavBarComponent/>
-       <ItemContainer  greeting="Viaje al Bienestar" />
+      <MainRouter />
     </>
   )
 }
