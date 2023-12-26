@@ -1,22 +1,28 @@
 import { useParams } from "react-router-dom"
-import { GetProductsById } from "../componentes/itemContainer/ItemListContainer"
+import {useGetProductsById} from "../Custom Hooks/GetProductsById"
+import "./itemDetail.css"
 
 const ItemDetailContainer = () => {
 
-  const {id} = useParams()
+    const {id} = useParams()
 
-  const {producto} = GetProductsById(id)
+     const { Product } = useGetProductsById(id)
+     console.log(Product);
+    
 
   return (
-    <div> 
-      <div style={{width: "300px", height: "300px", marginBottom: "20px", border:"solid gray 1px"}} key={item.id}>
+    <div className="onlyCard">
   
-    <img style={{height: "150px"}} src={producto.thumbnail} alt="" />
-    <h1>{producto.title}</h1>
-    <p>{producto.description}</p>
+    <img  src={Product.thumbnail} alt="" />
+    <div className="infoCard">
+    <h1>{Product.title}</h1>
+    <p>{Product.brand}</p>
+    <p>{Product.description}</p>
+    <p className="price">${Product.price}</p>
     <button>Buy Now</button>
-</div>
-</div>
+
+    </div>
+    </div>
   )
 }
 

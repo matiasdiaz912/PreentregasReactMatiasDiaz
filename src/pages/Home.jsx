@@ -1,8 +1,14 @@
-import ItemContainer from '../componentes/itemContainer/ItemListContainer'
+import ItemListContainer from "../componentes/itemListContainer/ItemListContainer"
+import useGetProducts from "../Custom Hooks/GetProducts"
 
 const Home = () => {
+
+  const {Products} = useGetProducts()
+
   return (
-    <ItemContainer greeting="Viaje al Bienestar" />
+   <div>
+     <ItemListContainer Products={Products}/>
+   </div>
   )
 }
 
