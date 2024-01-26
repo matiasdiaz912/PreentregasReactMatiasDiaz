@@ -1,0 +1,38 @@
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.718);
+    height: 15%;
+    width: 100vw;
+
+    & img{
+        width: 150px;
+    }
+
+    & .redes{
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5em;
+    }
+
+    & .redes a{
+        color: white;
+    }
+
+    & .redes .social{
+        transition: all 0.4s;
+    }
+
+    & .redes .social:hover{
+        transform: translateY(-15px);
+        transition: all 1s;
+    }
+
+}
+
+h2{
+    color: white;
+}

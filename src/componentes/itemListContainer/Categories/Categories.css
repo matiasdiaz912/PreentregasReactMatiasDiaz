@@ -1,0 +1,94 @@
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-around;
+    
+
+    & img{
+        width: 400px;
+        height: 250px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    & img:hover{
+        transform: scaleY(1.05);
+    }
+
+    & h2{
+            position: absolute;
+            font-weight: 900;
+            left: 40%;
+            top: 45%;
+            font-size: 2em;
+            color: white;
+            transition: all 0.3s ease-in-out;
+            /* inset: 0;
+            margin: 0 auto; */
+    }
+}
+
+.tecnologies{
+    position: relative;
+}
+
+ .tecnologies h2{
+    left: 30%;
+    top: 45%;
+}
+
+
+ .homeArticles h2{
+    left: 20%;
+    top: 43%;
+}
+
+ .homeArticles{
+    position: relative;
+}
+
+.garden{
+    position: relative;
+}
+
+
+.categoriesOpen{
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-around;
+    transition: all 1s;
+
+    & img{
+        width: 400px;
+        height: 250px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    & img:hover{
+        transform: scaleY(1.05);
+    }
+
+    
+    & h2{
+        position: absolute;
+        font-weight: 900;
+        left: 25%;
+        top: 45%;
+        font-size: 2em;
+        color: white;
+        transition: all 0.3s ease-in-out;
+        /* inset: 0;
+        margin: 0 auto; */
+}
+}
+
+.bienvenida{
+    color: black;
+    margin: 20px 0 0 20px;
+    font-size: 2em;
+}

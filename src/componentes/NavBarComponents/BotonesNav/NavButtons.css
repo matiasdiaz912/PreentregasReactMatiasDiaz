@@ -1,0 +1,50 @@
+.botonesDeNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+    & img{
+         width: 50px;
+    }
+}
+
+.botonesDeNav .accountButtons{
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px;
+    font-size: 0.9em;
+    border-radius: 20px;
+    transition: all 0.7s ease;
+
+    &:hover{
+         color: white;
+         background-color: black;
+        transition: all 0.4s;
+    }
+}
+
+.botonesDeNav .icons{
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 1.9em;
+}
+
+.sunModeActivado{
+    display: none;
+}
+
+.sunModeDesactivado{
+    display: visible;
+}
+
+.darkModeActivado{
+    display: none;
+}
+
+.darkModeDesactivado{
+    display: visible;
+}

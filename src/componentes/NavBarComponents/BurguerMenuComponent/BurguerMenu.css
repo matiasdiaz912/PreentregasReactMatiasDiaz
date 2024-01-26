@@ -1,0 +1,120 @@
+.burgerImage img{
+    width: 50px;
+}
+
+.burger-menu-closed{
+    padding-top: 12px;
+
+    & img{
+        display: visible;
+    }
+}
+
+ .burger-menu-open{
+    width: 20vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: all 1s;
+
+    & img{
+        display: none;
+    }
+} 
+
+.close-window-open{
+    color: white;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+.burgerMenu-inside-closed{
+    display: none;
+ }
+
+ .burgerMenu-inside-open ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.burgerMenu-inside-open ul .burgerButtons{
+   border: 1px solid black;
+   background-color: rgba(255, 9, 9, 0.904);
+   padding: 10px;
+   color: white;
+   display: flex;
+   align-items: center;
+    gap: 30px;
+   font-size: 1.1em;
+   width: 100%;
+
+   &:hover{
+    color: black;
+   }
+}
+
+
+.burgerMenu-inside-open ul .burgerButtons li{
+     list-style: none;
+     font-size: 1.5em;
+ }
+
+ .sacar-estilos{
+    text-decoration: none;
+ }
+
+.close-window-closed{
+    display: none;
+}
+
+.burgerButtons ul{
+  font-size: 0.7em;
+}
+
+.botonCategorias{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0;
+}
+
+.burgerButtons:nth-child(4){
+    display: flex;
+    flex-direction: column;
+
+    & .categoryListDesactivada{
+        display: none;
+    }
+
+    & .categoryListActivada{
+        margin-top: 0;
+        width: 100%;
+        margin-left: 90px;
+        margin-top: -20px;
+
+        & li{
+            list-style: disc;
+            text-align: start;
+        }
+
+        & button{
+            background-color: transparent;
+            color: white;
+             gap: 30px;
+            font-size: 0.8em;
+            width: 100%;
+            border: none;
+        }
+    }
+}
+
+.burgerButtons{
+    text-decoration: none;
+}

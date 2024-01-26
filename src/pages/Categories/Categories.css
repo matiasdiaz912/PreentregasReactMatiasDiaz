@@ -1,43 +1,28 @@
-.container{
+.containerCategory,
+.cambiarColorCategory{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
 }
 
-.cambiarColor{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-
-    & .allProducts--brand__dark, .allProducts--title__dark{
-        color: white;
-        margin: 10px;
-        font-size: 1em;
-    }
-
-    & .allProducts--brand__dark{
-        font-weight: 800;
-    }
-
-
-        
+h1{
+    margin: 30px 0;
 }
 
-.allProducts--card{
+.categoriesContainer{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.category--card{
     width: 23vw;
     height: 500px;
     border: black solid 1px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     margin-bottom: 20px;
     transition: all 0.5s ;
-    position: relative;
 
     & .heart{
         color: white;
@@ -92,19 +77,5 @@
         margin: 10px;
         color: rgba(255, 0, 0, 0.718);
         font-weight: bold;
-    }
-}
-
-.sinEstilos{
-    color: black;
-    text-decoration: none;
-    margin-top: 5px;
-}
-
-@keyframes heart {
-    to{
-        transform: translateY(-100px);
-        transform: scale(1.3);
-        color: red;
     }
 }

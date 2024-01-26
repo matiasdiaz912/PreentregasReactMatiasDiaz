@@ -1,0 +1,71 @@
+.carrito{
+    min-height: 60vh;
+}
+
+.miCarrito{
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr);
+    border: solid 2px rgba(255, 0, 0, 0.718);
+    margin: 0 20px 40px 30px;
+    place-items: center;
+    color: rgba(170, 150, 150, 0.945);
+    font-weight: 700;
+
+    & .image{
+        width: 130px;
+    }
+
+    & .iconsCart{
+        background-color: rgba(255, 0, 0, 0.718);
+        color: white;
+        font-size: 20px;
+        margin: 10px 0 5px 20px;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s all;
+
+        &:hover{
+            background-color: black;
+        }
+    }
+}
+
+.miCarritoNombres{
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr);
+    place-items: center;
+    background-color: rgba(255, 0, 0, 0.718);
+    color: white;
+    margin: 0 27px;
+}
+
+.miCarritoCuenta{
+
+    margin: 70px 80px;
+
+    & h2{
+        color: black;
+    
+        font-size: 2em;
+    }
+
+   & .eliminarCarrito{
+        background-color: rgba(128, 128, 128, 0.856);
+    }
+    & button{
+        margin: 10px 0 0 25px;
+        background-color: rgba(255, 0, 0, 0.718);
+        border-radius: 18px;
+        border: none;
+        color: white;
+        width: 200px;
+        height: 40px;
+        transition: 0.4s all;
+    
+        &:hover{
+            background-color: black;
+    }
+}
+}
+

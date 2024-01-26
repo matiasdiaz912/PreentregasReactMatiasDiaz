@@ -1,32 +1,28 @@
 .laNav{
     display: flex;
-    background-color: rgb(248, 244, 244); 
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-evenly;
+    background-color: rgba(255, 0, 0, 0.718);
 }
 
-.laNav ul{
-    list-style: none;
-     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.laNav--img{
+.laNav img{
     width: 100px;
-    margin-left: 100px;
 }
 
-.laNav li{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
-    margin-right: 30px;
-    color: black;
+.laNavOpen{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.718);
+    padding-right: 300px;
+    transition: all 1s;
+
+    & img{
+        width: 100px;
+    }
 }
 
-.laNav li:hover{
-    color: violet;
-}
+
 
 
 

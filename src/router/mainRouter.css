@@ -1,0 +1,9 @@
+.darkModeActivate{
+    background-color: rgba(0, 0, 0, 0.842);
+    color: beige;
+}
+
+.darkModeDesactivate{
+    background-color: white;
+    color: black;
+}

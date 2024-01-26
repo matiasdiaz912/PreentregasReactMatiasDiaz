@@ -1,4 +1,18 @@
 .cart{
-    font-size: 20px;
-    margin-right: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: -20px;
+    background: transparent;
+    color: white;
+    border: none;
+   padding: 5px 5px 0 5px;
+    font-size: 1.4em;
+    text-decoration: none;
 }
+
+h2{
+    font-size: 1.2em;
+    color: black;
+}
+

@@ -1,0 +1,62 @@
+.loginPage{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgba(128, 128, 128, 0.089);
+
+   & h1{
+     align-self: self-start;
+     margin-left: 350px;
+   }
+
+  & form{
+       border: gray solid 2px;
+       border-radius: 5px;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       width: 700px;
+       margin-bottom: 50px;
+   
+       & label{
+           margin: 10px 0;
+       }
+   
+       & input{
+           border: 1px solid gray;
+           border-radius: 1px;
+           width: 300px;
+           margin: 5px 0;
+           height: 30px;
+           padding-left: 5px;
+       }
+   
+       & button{
+           margin: 10px 0;
+           border: none;
+           background-color: rgba(255, 0, 0, 0.718);
+           color: white;
+           padding: 10px;
+           border-radius: 15px;
+           transition: 0.5s all;
+       }
+   
+       & button:hover{
+           color: white;
+           background-color: black;
+       }
+   }
+}
+
+.denegadoLogin{
+    color: red;
+    display: none;
+}
+
+.denegado{
+    color: red;
+}
+
+.ingreso{
+    color: green;
+}
